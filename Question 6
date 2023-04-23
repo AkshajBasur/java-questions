@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int principal= sc.nextInt();
+        double rate = sc.nextDouble();
+        int time= sc.nextInt();
+        int comp= sc.nextInt();
+        if(principal >0 && rate >0 && time>0 && comp>0 )
+        {
+            double interest = principal*((Math.pow(1+(rate/100),time*comp)-1));
+            System.out.println(interest);
+        }
+        else
+            System.out.println("0.0");
+        
+        
+    }
+}
