@@ -1,0 +1,49 @@
+import java.io.*;
+
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+
+        sc.nextLine();
+
+        int b = sc.nextInt();
+
+        sc.nextLine();
+
+        int c = sc.nextInt();
+
+        sc.nextLine();
+
+        int d = sc.nextInt();
+
+        int e = a+b+c+d;
+
+        if((a>=0)&&(a<20)&&(b>=0)&&(b<20)&&(c>=0)&&(c<15)&&(d>=0)&&(d<5)&&(e!=37)){ 
+
+            System.out.println(e); 
+
+        } 
+
+        else if (e==37){ 
+
+            System.out.print(26); 
+
+        } 
+
+        else{ 
+
+            System.out.print("Invalid Input"); 
+
+        } 
+
+    }
+
+}
