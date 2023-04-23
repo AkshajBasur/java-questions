@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num=sc.nextInt();
+        int flag=0;
+        if(num>1 && num<1000){
+        for(int i=0;i<10;i++)
+        {
+            if(Math.pow(i,3)==num)
+            {
+                System.out.println("Perfect Cube");
+                flag=1;
+            }
+        }
+        if(flag==0)
+            System.out.println("Not Perfect Cube");
+    }
+}}
