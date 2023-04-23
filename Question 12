@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int prod=1,sum=0,check=0,temp;
+        
+        if(a<100 && a>9)
+        {
+            temp=a%10;
+            prod=(a/10)*temp;
+            sum=(a/10)+temp;
+            if((prod+sum)==a)
+                System.out.println("special two digit number");
+            else
+                System.out.println("not a special two digit number");
+        }
+        else
+            System.out.println("invalid input");
+    }
+}
