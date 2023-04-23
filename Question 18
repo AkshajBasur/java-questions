@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        float x=sc.nextFloat();
+        float a=(x*9/5)+32;
+        if (x>=30 && x<=45)
+            System.out.println(a);
+        else 
+            System.out.println("Invalid Input");
+
+    }
+}
